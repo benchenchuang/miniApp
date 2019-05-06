@@ -1,0 +1,13 @@
+<!--pages/components/page_navigation/index.wxml-->
+<view style="height:{{CustomBar}}px;">
+  <view class="cu-custom" style="height:{{CustomBar}}px;">
+    <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+      <navigator class='action' wx:if="{{isBack}}" open-type="navigateBack" delta="1" hover-class="none">返回{{isBack}}</navigator>
+      <view class="userinfo" style="height:{{CustomBar-StatusBar}}px;line-height:{{CustomBar-StatusBar}}px;">
+        <image class="userinfo-avatar" style="height:{{CustomBar/2}}px;width:{{CustomBar/2}}px;" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <view class="userinfo-nickname"style="line-height:{{CustomBar/2}}px;">{{userInfo.nickName}}</view>
+          <slot name="title"></slot>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "page-navigation":"../components/page_navigation/index"
+  }
+}

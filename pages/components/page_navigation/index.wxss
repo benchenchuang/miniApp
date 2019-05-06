@@ -1,0 +1,38 @@
+/* pages/components/page_navigation/index.wxss */
+.cu-custom{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-left: 20rpx;
+  background: -webkit-linear-gradient(left bottom,red,blue);
+  background: linear-gradient(left bottom,red,blue); 
+  box-sizing: border-box;
+}
+.cu-bar{
+  box-sizing: border-box
+}
+.userinfo{
+  position: absolute;
+  top: 50%;
+  margin-top: -22rpx;
+  display: inline-block;
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.userinfo .userinfo-avatar{
+  vertical-align: middle;
+  border-radius: 100%;
+}
+.userinfo .userinfo-nickname{
+  display: inline-block;
+  margin-left: 20rpx;
+}
+.action{
+  display: inline-block;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
